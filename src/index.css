@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pacifico&display=swap');
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+body {
+    font-family: "Comic Neue";
+    background-color: #F4F2EE;
+}
+
+.group {
+    transition: all ease-in-out 0.15s;
+}
+
+.group:hover {
+    transform: scale(1.05);
+}
+
+.meal:hover .mealImg {
+    rotate: 360deg;
+}
+
+.meal .mealImg {
+    transition: all ease-in-out 700ms;
+}
+
+.view {
+    transition: all ease-in-out 0.15s;
+}
+
+.view:hover {
+    transform: scale(1.05);
+}
+
+#home h1 {
+    font-family: "Pacifico";
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #F29724, rgba(202, 16, 35, 0.768627451), #c90519);
+}
+
+.active a,
+.active:hover a {
+    color: white;
+    background-color: black;
+}
+
+#mealsDetails h1 {
+    font-family: "Pacifico";
+}
+
+/*# sourceMappingURL=index.css.map */

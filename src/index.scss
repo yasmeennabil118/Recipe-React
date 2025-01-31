@@ -1,0 +1,53 @@
+body {
+    font-family: "Comic Neue";
+    background-color: #F4F2EE;
+}
+
+@mixin trans() {
+    transition: all ease-in-out 0.15s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.group {
+    @include trans()
+}
+
+.meal {
+    &:hover {
+        .mealImg {
+            rotate: 360deg;
+        }
+    }
+
+    .mealImg {
+        transition: all ease-in-out 700ms;
+    }
+}
+
+.view {
+    @include trans()
+}
+
+#home {
+    h1 {
+        font-family: 'Pacifico';
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to right, #F29724, #ca1023c4, #c90519);
+    }
+}
+
+.active a,
+.active:hover a {
+    color: white;
+    background-color: black;
+}
+
+#mealsDetails {
+    h1 {
+        font-family: 'Pacifico';
+    }
+}
